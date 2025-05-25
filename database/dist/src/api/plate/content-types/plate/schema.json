@@ -1,0 +1,46 @@
+{
+    "kind": "collectionType",
+    "collectionName": "plates",
+    "info": {
+        "singularName": "plate",
+        "pluralName": "plates",
+        "displayName": "Plate",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "on_card": {
+            "type": "boolean"
+        },
+        "price": {
+            "type": "decimal"
+        },
+        "plate_category": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::plate-category.plate-category",
+            "inversedBy": "plates"
+        },
+        "allergens": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::allergen.allergen",
+            "inversedBy": "plates"
+        },
+        "image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "kind": "collectionType",
+    "collectionName": "formules",
+    "info": {
+        "singularName": "formule",
+        "pluralName": "formules",
+        "displayName": "Formule"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "price": {
+            "type": "decimal"
+        },
+        "on_card": {
+            "type": "boolean"
+        }
+    }
+}

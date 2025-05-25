@@ -1,0 +1,23 @@
+{
+    "kind": "collectionType",
+    "collectionName": "menus",
+    "info": {
+        "singularName": "menu",
+        "pluralName": "menus",
+        "displayName": "Menu"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "Nom": {
+            "type": "string"
+        },
+        "Description": {
+            "type": "text"
+        },
+        "Prix": {
+            "type": "decimal"
+        }
+    }
+}

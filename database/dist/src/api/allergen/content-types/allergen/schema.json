@@ -1,0 +1,23 @@
+{
+    "kind": "collectionType",
+    "collectionName": "allergens",
+    "info": {
+        "singularName": "allergen",
+        "pluralName": "allergens",
+        "displayName": "Allergens"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "plates": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::plate.plate",
+            "mappedBy": "allergens"
+        }
+    }
+}
