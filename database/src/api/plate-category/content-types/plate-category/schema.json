@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plate_categories",
+  "info": {
+    "singularName": "plate-category",
+    "pluralName": "plate-categories",
+    "displayName": "Plate Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "plates": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plate.plate",
+      "mappedBy": "plate_category"
+    }
+  }
+}

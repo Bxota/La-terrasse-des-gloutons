@@ -1,0 +1,22 @@
+{
+  "name": "restaurant-webapp",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "HOST=0.0.0.0 nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview --host 0.0.0.0 --port 3000",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.0",
+    "primevue": "^3.50.0",
+    "primeicons": "^6.0.1",
+    "socket.io-client": "^4.7.4",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7",
+    "jwt-decode": "^4.0.0"
+  }
+}
