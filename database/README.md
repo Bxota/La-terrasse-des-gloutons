@@ -1,3 +1,93 @@
+# Backend - La Terrasse des Gloutons
+
+Ce projet est le backend de l'application La Terrasse des Gloutons, développé avec Express.js et SQLite.
+
+## Technologies utilisées
+
+- Node.js
+- Express.js
+- TypeScript
+- SQLite3
+- Prisma (ORM)
+
+## Structure du projet
+
+```
+database/
+├── src/           # Code source TypeScript
+├── config/        # Fichiers de configuration
+├── types/         # Types TypeScript
+├── public/        # Fichiers statiques
+└── database/      # Schéma et migrations de la base de données
+```
+
+## Installation
+
+```bash
+npm install
+```
+
+## Configuration de la base de données
+
+1. Créez un fichier `.env` à la racine du projet :
+
+```env
+DATABASE_URL="file:./data.db"
+```
+
+2. Initialisez la base de données :
+
+```bash
+npm run db:init
+```
+
+## Développement
+
+```bash
+npm run dev
+```
+
+L'API sera accessible à l'adresse : http://localhost:3001
+
+## Build pour la production
+
+```bash
+npm run build
+```
+
+## API Endpoints
+
+### Menus
+
+- GET /api/menus - Liste tous les menus
+- GET /api/menus/:id - Récupère un menu spécifique
+- POST /api/menus - Crée un nouveau menu
+- PUT /api/menus/:id - Met à jour un menu
+- DELETE /api/menus/:id - Supprime un menu
+
+### Commandes
+
+- GET /api/commandes - Liste toutes les commandes
+- GET /api/commandes/:id - Récupère une commande spécifique
+- POST /api/commandes - Crée une nouvelle commande
+- PUT /api/commandes/:id - Met à jour une commande
+- DELETE /api/commandes/:id - Supprime une commande
+
+## Tests
+
+```bash
+npm run test
+```
+
+## Déploiement
+
+L'API peut être déployée sur n'importe quel service supportant Node.js, comme :
+
+- Heroku
+- AWS
+- DigitalOcean
+- Railway
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.

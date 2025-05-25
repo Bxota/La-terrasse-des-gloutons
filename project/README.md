@@ -1,42 +1,74 @@
-# Nuxt 3 Minimal Starter
+# Frontend - La Terrasse des Gloutons
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Ce projet est l'interface utilisateur de l'application La Terrasse des Gloutons, développée avec Nuxt.js.
 
-## Setup
+## Technologies utilisées
 
-Make sure to install the dependencies:
+- Nuxt.js 3
+- TypeScript
+- Tailwind CSS
+- Vue.js 3
+- Composition API
 
-```bash
-# yarn
-yarn install
+## Structure du projet
 
-# npm
-npm install
-
-# pnpm
-pnpm install
+```
+project/
+├── components/     # Composants Vue réutilisables
+├── composables/    # Composables Vue (hooks)
+├── pages/         # Pages de l'application
+├── plugins/       # Plugins Nuxt
+├── public/        # Fichiers statiques
+├── server/        # API routes
+└── middleware/    # Middleware Nuxt
 ```
 
-## Development Server
+## Installation
 
-Start the development server on http://localhost:3000
+```bash
+npm install
+```
+
+## Développement
 
 ```bash
 npm run dev
 ```
 
-## Production
+L'application sera accessible à l'adresse : http://localhost:3000
 
-Build the application for production:
+## Build pour la production
 
 ```bash
 npm run build
 ```
 
-Locally preview production build:
+## Linting
 
 ```bash
-npm run preview
+npm run lint
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Tests
+
+```bash
+npm run test
+```
+
+## Configuration
+
+Le fichier `nuxt.config.ts` contient la configuration principale de l'application :
+
+- Configuration de Tailwind CSS
+- Configuration des modules Nuxt
+- Configuration des variables d'environnement
+- Configuration des plugins
+
+## Déploiement
+
+L'application peut être déployée sur n'importe quel service supportant Node.js, comme :
+
+- Vercel
+- Netlify
+- Heroku
+- AWS
